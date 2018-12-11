@@ -3,7 +3,7 @@
 DEFAULT_ENV='http://aem-docker-training.aws-preprod.telegraph.co.uk:4502/'
 LOCALHOST='http://localhost:4502/'
 ROOTPAGE='crx/packmgr/index.jsp'
-PACKAGE_GROUP='my_packages'
+PACKAGE_GROUP='hub-migration'
 PACKAGE_PATH="/etc/packages/${PACKAGE_GROUP}/"
 CRX_CREATE_PATH="crx/packmgr/service/.json${PACKAGE_PATH}"
 CRX_UPDATE_PATH='crx/packmgr/update.jsp'
