@@ -116,6 +116,7 @@ if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
     exit 1;
 fi
 
+./hub-backup.sh -p ${path} -e ${env} -u ${auth}
 
 # TODO:
 # store nodes seen - where ... google doc?

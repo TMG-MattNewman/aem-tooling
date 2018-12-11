@@ -85,3 +85,11 @@ if [[ ! "$buildPackage" == "200" ]]; then
     echo "curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}.zip\?cmd\=build"
     exit 1;
 fi
+
+# Define a timestamp function
+timestamp() {
+  date +"%T"
+}
+
+# download package
+curl --user $auth ${env}${CRX_CREATE_PATH}${packageName}.zip > ${packageName}.${timestamp}.zip
