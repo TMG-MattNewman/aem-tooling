@@ -20,12 +20,13 @@ auth='admin:admin'
 #   -l = use localhost as env
 #   -v = verbose output
 
-while getopts  "p:e:u:vl" OPTION
+while getopts  "p:e:u:ilv" OPTION
 do
     case $OPTION in
         p) path=$OPTARG;;
         e) env=$OPTARG;;
         u) auth=$OPTARG;;
+        i) inverted=1;;
         v) verbose=1;;
         *) exit 1 # illegal option
     esac
@@ -54,6 +55,11 @@ fi
 packageNameStripped=${path//content\/telegraph\/}
 packageNameStripped=${packageNameStripped//\/jcr:content/}
 packageName=${packageNameStripped//\//-}
+
+if [[ ${inverted} ]]; then
+    packageName=${packageName}.converted
+fi
+
 packageZip=${PACKAGE_PATH}${packageName}.zip
 
 if [[ ${verbose} ]]; then
@@ -87,9 +93,9 @@ if [[ ! "$buildPackage" == "200" ]]; then
 fi
 
 # Define a timestamp function
-timestamp() {
-  date +"%T"
+datetime() {
+  date '+%Y-%m-%d.%H:%M:%S'
 }
 
 # download package
-curl --user $auth ${env}${CRX_CREATE_PATH}${packageName}.zip > ${packageName}.${timestamp}.zip
+curl --silent --user ${auth} ${env}${CRX_CREATE_PATH}${packageName}.zip > ${packageName}.$(datetime).zip

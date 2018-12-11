@@ -91,6 +91,15 @@ if [[ ${invert} ]]; then
     HUB_TEMPLATE=${tempTemplate}
 fi
 
+# create backup package
+BACKUP_PARAMS="-p ${path} -e ${env} -u ${auth}"
+if [[ ${invert} ]]; then
+  BACKUP_PARAMS+=" -i"
+fi
+if [[ ${verbose} ]]; then
+  BACKUP_PARAMS+=" -v"
+fi
+
 if [[ ${verbose} ]]; then
     echo "env=${env}"
     echo "path=${path}"
@@ -116,7 +125,7 @@ if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
     exit 1;
 fi
 
-./hub-backup.sh -p ${path} -e ${env} -u ${auth}
+./hub-backup.sh ${BACKUP_PARAMS}
 
 # TODO:
 # store nodes seen - where ... google doc?
