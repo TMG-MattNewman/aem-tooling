@@ -19,3 +19,13 @@ the script defaults to pointing to training, but can be pointed to a different e
 ```
 
 the path will prepend /content/telegraph for you, so you don't need that part
+
+## Help ... I think I messed up:
+
+Don't worry these scripts do a certain amount of precautionary actions, creating backup packages and downloading them, so everything is fairly easily reversible, if you converted a page by mistake and want to change it back, try adding the -i parameter, e.g:
+
+```
+./hub-template-conversion-script.sh -p gaming -i
+``` 
+
+Should change gaming back to an old hub page
