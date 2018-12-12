@@ -120,8 +120,8 @@ fi
 pageJson=$(curl --silent --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json)
 # curl -i --user $auth $env$path
 if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
-    echo "page doesn't seem to be a hub page..."
-    echo "curl --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json"
+    echo "page doesn't seem to be a hub page... $path"
+    #echo "curl --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json"
     exit 1;
 fi
 
@@ -136,8 +136,7 @@ fi
 # update the nodes in AEM
 updateStatus=$(curl --write-out %{http_code} --silent --output /dev/null -i --data cq:template=$INDEX_TEMPLATE --data sling:resourceType=$INDEX_RENDERER --user $auth -L --connect-timeout $TIMEOUT $env$path)
 if [[ ! "$updateStatus" == "200" ]]; then
-    echo "failed to update!"
-    echo "using: curl -L --user $auth --data cq:template=${INDEX_TEMPLATE} --data sling:resourceType=${INDEX_RENDERER} --connect-timeout $TIMEOUT $env$path"
+    echo "failed to update! using: curl -L --user $auth --data cq:template=${INDEX_TEMPLATE} --data sling:resourceType=${INDEX_RENDERER} --connect-timeout $TIMEOUT $env$path"
     exit 1;
 fi
 
@@ -149,7 +148,6 @@ fi
 # add content parsys node
 addContentNode=$(curl --write-out %{http_code} --silent --output /dev/null -i --data jcr:primaryType=$INDEX_CONTENT_NODE_TYPE --data sling:resourceType=$INDEX_CONTENT_RESOURCE_TYPE --user $auth -L --connect-timeout $TIMEOUT $env$path/par)
 if [[ ! "$updateStatus" == "200" ]]; then
-    echo "failed to add content node!"
-    echo "using: curl -L --user $auth --data jcr:primaryType=${INDEX_CONTENT_NODE_TYPE} --data sling:resourceType=${INDEX_CONTENT_RESOURCE_TYPE} --connect-timeout $TIMEOUT $env$path/par"
+    echo "failed to add content node! using: curl -L --user $auth --data jcr:primaryType=${INDEX_CONTENT_NODE_TYPE} --data sling:resourceType=${INDEX_CONTENT_RESOURCE_TYPE} --connect-timeout $TIMEOUT $env$path/par"
     exit 1;
 fi
