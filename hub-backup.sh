@@ -92,10 +92,17 @@ if [[ ! "$buildPackage" == "200" ]]; then
     exit 1;
 fi
 
+if [[ ${env} =~ docker-(.*)\.aws ]]; then
+    packageName=${BASH_REMATCH[1]}-${packageName}
+fi
+
 # Define a timestamp function
 datetime() {
-  date '+%Y-%m-%d.%H:%M:%S'
+  date '+%Y-%m-%d__%H-%M-%S'
 }
 
+# make a directory to store the downloaded zip files
+mkdir -p hub-packages
+
 # download package
-curl --silent --user ${auth} ${env}${CRX_CREATE_PATH}${packageName}.zip > ${packageName}.$(datetime).zip
+curl --silent --user ${auth} ${env}${CRX_CREATE_PATH}${packageName}.zip > ./hub-packages/${packageName}.$(datetime).zip
