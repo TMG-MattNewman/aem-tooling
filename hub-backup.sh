@@ -9,7 +9,9 @@ CRX_CREATE_PATH="crx/packmgr/service/.json${PACKAGE_PATH}"
 CRX_UPDATE_PATH='crx/packmgr/update.jsp'
 TIMEOUT=2
 
+targetDir='hub-packages'
 path=''
+pathSupplied=0
 env=${LOCALHOST}
 auth='admin:admin'
 
@@ -20,17 +22,24 @@ auth='admin:admin'
 #   -l = use localhost as env
 #   -v = verbose output
 
-while getopts  "p:e:u:ilv" OPTION
+while getopts  "p:t:e:u:ilv" OPTION
 do
     case $OPTION in
-        p) path=$OPTARG;;
+        p) path=$OPTARG; pathSupplied=1;;
+        t) targetDir=$OPTARG;;
         e) env=$OPTARG;;
         u) auth=$OPTARG;;
+        l) local=1;;
         i) inverted=1;;
         v) verbose=1;;
-        *) exit 1 # illegal option
+        *) exit 1;; # illegal option
     esac
 done
+
+if [[ ! ${path} ]]; then
+    echo 'path is a required param for backup!'
+    exit 1;
+fi
 
 # if env does not end with a forward slash add one
 if [[ ! ${env} =~ /$ ]]; then
@@ -63,32 +72,29 @@ fi
 packageZip=${PACKAGE_PATH}${packageName}.zip
 
 if [[ ${verbose} ]]; then
-    echo packageNameStripped=${packageNameStripped}
-    echo packageName=${packageName}
-    echo packageZip=${packageZip}
+    echo "packageNameStripped=${packageNameStripped}"
+    echo "packageName=${packageName}"
+    echo "packageZip=${packageZip}"
 fi
 
 # create package
 createPackage=$(curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}\?cmd\=create -d packageName=${packageName} -d groupName=${PACKAGE_GROUP})
 if [[ ! "$createPackage" == "200" ]]; then
-    echo "failed to create package"
-    echo "curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}\?cmd\=create -d packageName=${packageName} -d groupName=${PACKAGE_GROUP}"
+    echo "failed to create package: curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}\?cmd\=create -d packageName=${packageName} -d groupName=${PACKAGE_GROUP}"
     exit 1;
 fi
 
 # add filters
 addFilters=$(curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_UPDATE_PATH} -F path=${packageZip} -F packageName=${packageName} -F groupName=${PACKAGE_GROUP} -F filter="[{\"root\" : \"/${path}\", \"rules\": []}]" -F '_charset_=UTF-8')
 if [[ ! "$addFilters" == "200" ]]; then
-    echo "failed to add filters"
-    echo "curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_UPDATE_PATH} -F path=${packageZip} -F packageName=${packageName} -F groupName=${PACKAGE_GROUP} -F filter=\"[{\"root\" : \"/${path}\", \"rules\": []}]\" -F '_charset_=UTF-8'"
+    echo "failed to add filters: curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_UPDATE_PATH} -F path=${packageZip} -F packageName=${packageName} -F groupName=${PACKAGE_GROUP} -F filter=\"[{\"root\" : \"/${path}\", \"rules\": []}]\" -F '_charset_=UTF-8'"
     exit 1;
 fi
 
 # build package
 buildPackage=$(curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}.zip\?cmd\=build)
 if [[ ! "$buildPackage" == "200" ]]; then
-    echo "failed to build package"
-    echo "curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}.zip\?cmd\=build"
+    echo "failed to build package: curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}.zip\?cmd\=build"
     exit 1;
 fi
 
@@ -102,7 +108,7 @@ datetime() {
 }
 
 # make a directory to store the downloaded zip files
-mkdir -p hub-packages
+mkdir -p ${targetDir}
 
 # download package
-curl --silent --user ${auth} ${env}${CRX_CREATE_PATH}${packageName}.zip > ./hub-packages/${packageName}.$(datetime).zip
+curl --silent --user ${auth} ${env}${CRX_CREATE_PATH}${packageName}.zip > ./${targetDir}/${packageName}.$(datetime).zip

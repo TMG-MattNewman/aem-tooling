@@ -8,9 +8,6 @@ LOCALHOST='http://localhost:4502/'
 ROOTPAGE='libs/cq/core/content/welcome.html'
 TIMEOUT=2
 
-INDEX_CONTENT_NODE_TYPE='nt:unstructured'
-INDEX_CONTENT_RESOURCE_TYPE='foundation/components/parsys'
-
 env=${DEFAULT_ENV}
 auth='admin:admin'
 
@@ -41,5 +38,13 @@ if [[ ${targetProvided} -eq 0 || ${destinationProvided} -eq 0 ]]; then
     echo "Error: either target (-t) or destination (-d) arguments not provided."
     exit 1;
 fi
+
+# create backup package
+BACKUP_PARAMS="-p ${targetPath} -e ${env} -u ${auth}"
+if [[ ${verbose} ]]; then
+  BACKUP_PARAMS+=" -v"
+fi
+
+./hub-backup.sh ${BACKUP_PARAMS}
 
 -F:operation=move

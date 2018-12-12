@@ -36,7 +36,7 @@ do
         u) auth=$OPTARG;;
         i) invert=1;;
         v) verbose=1;;
-        *) exit 1 # illegal option
+        *) exit 1;; # illegal option
     esac
 done
 
@@ -95,6 +95,9 @@ fi
 BACKUP_PARAMS="-p ${path} -e ${env} -u ${auth}"
 if [[ ${invert} ]]; then
   BACKUP_PARAMS+=" -i"
+fi
+if [[ ${local} ]]; then
+  BACKUP_PARAMS+=" -l"
 fi
 if [[ ${verbose} ]]; then
   BACKUP_PARAMS+=" -v"
