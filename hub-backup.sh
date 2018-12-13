@@ -9,24 +9,18 @@ CRX_CREATE_PATH="crx/packmgr/service/.json${PACKAGE_PATH}"
 CRX_UPDATE_PATH='crx/packmgr/update.jsp'
 TIMEOUT=2
 
-targetDir='hub-packages'
+outputDir='hub-packages'
 path=''
 pathSupplied=0
+outputDirSupplied=0
 env=${LOCALHOST}
 auth='admin:admin'
 
-# get input/args:
-#   -p = path/to/page (required)
-#   -e = env (optional - default to training)
-#   -u = username:password (optional - default to admin:admin)
-#   -l = use localhost as env
-#   -v = verbose output
-
-while getopts  "p:t:e:u:ilv" OPTION
+while getopts  "p:o:e:u:ilv" OPTION
 do
     case $OPTION in
         p) path=$OPTARG; pathSupplied=1;;
-        t) targetDir=$OPTARG;;
+        o) outputDir=$OPTARG; outputDirSupplied=1;;
         e) env=$OPTARG;;
         u) auth=$OPTARG;;
         l) local=1;;
@@ -47,6 +41,7 @@ if [[ ! ${env} =~ /$ ]]; then
     env="${env}/"
 fi
 
+# TODO: use path manipulation instead
 # if path starts with a forward slash, strip it, because one exists at the end of $env
 if [[ ${path} =~ ^/ ]]; then
     path="${path:1}"
@@ -61,6 +56,7 @@ if [[ ! "$connectStatus" == "200" ]]; then
     exit 1;
 fi
 
+# some regex stripping of path
 packageNameStripped=${path//content\/telegraph\/}
 packageNameStripped=${packageNameStripped//\/jcr:content/}
 packageName=${packageNameStripped//\//-}
@@ -75,6 +71,7 @@ if [[ ${verbose} ]]; then
     echo "packageNameStripped=${packageNameStripped}"
     echo "packageName=${packageName}"
     echo "packageZip=${packageZip}"
+    echo "outputDir=${outputDir}"
 fi
 
 # create package
@@ -108,7 +105,7 @@ datetime() {
 }
 
 # make a directory to store the downloaded zip files
-mkdir -p ${targetDir}
+mkdir -p ${outputDir}
 
-# download package
-curl --silent --user ${auth} ${env}${CRX_CREATE_PATH}${packageName}.zip > ./${targetDir}/${packageName}.$(datetime).zip
+# download package and suppress download stats
+curl --silent --fail --show-error --user ${auth} ${env}etc/packages/${PACKAGE_GROUP}/${packageName}.zip > ./${outputDir}/${packageName}.$(datetime).zip

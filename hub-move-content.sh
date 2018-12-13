@@ -52,8 +52,11 @@ if [[ ${copy} ]]; then
     operation='copy'
 fi
 
+backupToPath=$(./aem-path-adapter.sh -p ${to} -x)
+backupFromPath=$(./aem-path-adapter.sh -p ${from} -x)
+
 # create backup package
-BACKUP_PARAMS="-p ${from} -e ${env} -u ${auth} -t content-moving"
+BACKUP_PARAMS="-p ${backupFromPath} -e ${env} -u ${auth} -o content-moving"
 if [[ ${verbose} ]]; then
   BACKUP_PARAMS+=" -v"
 fi
@@ -65,19 +68,21 @@ if [[ ${verbose} ]]; then
     echo "auth=${auth}"
     echo "copy=${copy}"
     echo "local=${local}"
+    echo "backupToPath=${backupToPath}"
+    echo "backupFromPath=${backupFromPath}"
 fi
 
 # backup both to and from pages ...
 ./hub-backup.sh ${BACKUP_PARAMS}
 # as the last -p param will be the one used, just add it to the end and re-run
-BACKUP_PARAMS+=" -p ${to}"
+BACKUP_PARAMS+=" -p ${backupToPath}"
 ./hub-backup.sh ${BACKUP_PARAMS}
 
 # now need to delete the target (to) node in case it already exists
 curl -X DELETE --user $auth ${env}${to}
 
 # move/copy node from from to dest
-operationResult=$(curl --user $auth -iL --connect-timeout $TIMEOUT -F:operation=${operation} -F:dest=${to} ${env}${from})
+operationResult=$(curl --silent --user $auth -iL --connect-timeout $TIMEOUT -F:operation=${operation} -F:dest=/${to} ${env}${from})
 if [[ ! ${operationResult} =~ 201 ]]; then
     echo "failed to move or copy content: curl --user $auth -L --connect-timeout $TIMEOUT -F:operation=${operation} -F:dest=/${to} ${env}${from}"
     exit 1;
