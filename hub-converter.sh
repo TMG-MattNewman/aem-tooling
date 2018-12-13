@@ -14,6 +14,8 @@ INDEX_TEMPLATE='/apps/telegraph/core/commons/templates/indexTemplate'
 INDEX_CONTENT_NODE_TYPE='nt:unstructured'
 INDEX_CONTENT_RESOURCE_TYPE='foundation/components/parsys'
 
+PATH_PARAMS=''
+
 path=''
 env=${DEFAULT_ENV}
 auth='admin:admin'
@@ -45,36 +47,14 @@ if [[ $# == 1 ]]; then
     path=$1;
 fi
 
-# if path starts with a forward slash, strip it, because one exists at the end of $env
-if [[ ${path} =~ ^/ ]]; then
-    path="${path:1}"
-fi
-
-# if path ends with a forward slash, strip it
-if [[ ${path} =~ /$ ]]; then
-    path="${path: : -1}"
-fi
-
-# if path now only has a forward slash, then it was empty
-if [[ ${path} == '/' ]]; then
-    echo "path not supplied or invalid"
-    exit 1;
-fi
-
-# prefix /content/telegraph if not there
-if [[ ! ${path} =~ telegraph/ ]]; then
-    path=content/telegraph/${path}
-fi
-
-# append /jcr:content if not there
-if [[ ! ${path} =~ /jcr:content$ ]]; then
-    path="${path}/jcr:content"
-fi
-
 # if env does not end with a forward slash add one
 if [[ ! ${env} =~ /$ ]]; then
     env="${env}/"
 fi
+
+# get/setup the path
+PATH_PARAMS+="-p ${path}"
+path=$(./aem-path-adapter.sh ${PATH_PARAMS})
 
 # if local flag is there, use localhost
 if [[ ${local} ]]; then

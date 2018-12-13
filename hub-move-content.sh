@@ -13,8 +13,8 @@ auth='admin:admin'
 operation='move'
 
 # get input/args:
-#   -t = path/to/page (required)
-#   -d = path/to/page (required)
+#   -t = full/path/to/node (required)
+#   -d = full/path/to/node (required)
 #   -e = env (optional - default to training)
 #   -u = username:password (optional - default to admin:admin)
 #   -c = copy content rather than moving it
@@ -73,17 +73,12 @@ fi
 BACKUP_PARAMS+=" -p ${to}"
 ./hub-backup.sh ${BACKUP_PARAMS}
 
-# now need to delete from node in case it already exists
+# now need to delete the target (to) node in case it already exists
 curl -X DELETE --user $auth ${env}${to}
-
-# now need to add a forward slash to 'to'
-if [[ ! ${to} =~ ^/ ]]; then
-    to="/${to}"
-fi
 
 # move/copy node from from to dest
 operationResult=$(curl --user $auth -iL --connect-timeout $TIMEOUT -F:operation=${operation} -F:dest=${to} ${env}${from})
 if [[ ! ${operationResult} =~ 201 ]]; then
-    echo "failed to move or copy content: curl --user $auth -L --connect-timeout $TIMEOUT -F:operation=${operation} -F:dest=${to} ${env}${from}"
+    echo "failed to move or copy content: curl --user $auth -L --connect-timeout $TIMEOUT -F:operation=${operation} -F:dest=/${to} ${env}${from}"
     exit 1;
 fi
