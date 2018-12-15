@@ -53,7 +53,7 @@ if [[ ! ${env} =~ /$ ]]; then
 fi
 
 # get/setup the path
-PATH_PARAMS+="-p ${path}"
+PATH_PARAMS+="-p ${path} -j"
 path=$(./aem-path-adapter.sh ${PATH_PARAMS})
 
 # if local flag is there, use localhost
@@ -103,8 +103,7 @@ fi
 pageJson=$(curl --silent --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json)
 # curl -i --user $auth $env$path
 if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
-    echo "page doesn't seem to be a hub page... $path"
-    #echo "curl --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json"
+    echo "page doesn't seem to be a hub page... $path ::curl --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json"
     exit 1;
 fi
 

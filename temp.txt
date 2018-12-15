@@ -1,354 +1,342 @@
-total 2824
--rw-r--r--  1 newmanm  TMG\Domain Users   330B 12 Dec 17:53 cars-volvo.2018-12-12__17-53-04.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   330B 12 Dec 18:11 cars-volvo.2018-12-12__18-11-06.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   333B 12 Dec 18:53 gaming-guides.2018-12-12__18-53-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   333B 12 Dec 18:54 gaming-guides.2018-12-12__18-54-04.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 18:53 gaming-guides.converted.2018-12-12__18-53-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 18:54 gaming-guides.converted.2018-12-12__18-54-02.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 12:58 news-investigations.2018-12-12__12-58-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 13:28 news-investigations.2018-12-12__13-28-51.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 13:22 news-investigations.converted.2018-12-12__13-22-46.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:02 training-beauty-body.2018-12-12__14-02-40.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:02 training-beauty-events.2018-12-12__14-02-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:02 training-beauty-face.2018-12-12__14-02-45.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:02 training-beauty-hair-nails.2018-12-12__14-02-47.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:02 training-beauty-make-up.2018-12-12__14-02-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:02 training-beauty-nails.2018-12-12__14-02-52.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:02 training-beauty-news.2018-12-12__14-02-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:02 training-beauty-people.2018-12-12__14-02-56.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:02 training-beauty-skin.2018-12-12__14-02-58.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 14:03 training-beauty-tips-tutorials.2018-12-12__14-03-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   335B 12 Dec 14:02 training-beauty.2018-12-12__14-02-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 16:33 training-bills-and-utilities-broadband.2018-12-12__16-33-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   361B 12 Dec 16:33 training-bills-and-utilities-gas-electric.2018-12-12__16-33-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 16:33 training-bills-and-utilities-phone.2018-12-12__16-33-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   365B 12 Dec 16:33 training-bills-and-utilities-renewable-energy.2018-12-12__16-33-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   351B 12 Dec 16:33 training-bills-and-utilities-tv.2018-12-12__16-33-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:33 training-bills-and-utilities.2018-12-12__16-33-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 14:05 training-cars-a-z.2018-12-12__14-05-41.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:05 training-cars-advice.2018-12-12__14-05-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:05 training-cars-alfa-romeo.2018-12-12__14-05-45.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:05 training-cars-alpina.2018-12-12__14-05-47.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:05 training-cars-aston-martin.2018-12-12__14-05-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:05 training-cars-audi.2018-12-12__14-05-52.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:05 training-cars-bentley.2018-12-12__14-05-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   365B 12 Dec 14:05 training-cars-best-cars-for-three-child-seats.2018-12-12__14-05-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 14:05 training-cars-bmw.2018-12-12__14-05-59.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:06 training-cars-buggy-friendly.2018-12-12__14-06-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 16:26 training-cars-cheap-to-run.2018-12-12__16-26-02.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 16:25 training-cars-citroen.2018-12-12__16-25-27.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:06 training-cars-classic.2018-12-12__14-06-04.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:06 training-cars-comment-alex-robbins.2018-12-12__14-06-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   356B 12 Dec 14:06 training-cars-comment-andrew-english.2018-12-12__14-06-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   356B 12 Dec 14:06 training-cars-comment-andrew-frankel.2018-12-12__14-06-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 14:06 training-cars-comment-ben-collins.2018-12-12__14-06-16.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:06 training-cars-comment-chris-knapman.2018-12-12__14-06-18.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   352B 12 Dec 14:06 training-cars-comment-erin-baker.2018-12-12__14-06-20.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:06 training-cars-comment-james-foxall.2018-12-12__14-06-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   357B 12 Dec 14:06 training-cars-comment-rebecca-jackson.2018-12-12__14-06-25.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   359B 12 Dec 14:06 training-cars-comment-steve-huntingford.2018-12-12__14-06-27.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:06 training-cars-comment.2018-12-12__14-06-06.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:06 training-cars-dacia.2018-12-12__14-06-29.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   336B 12 Dec 14:06 training-cars-ds.2018-12-12__14-06-31.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:06 training-cars-easy-access.2018-12-12__14-06-34.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:06 training-cars-easy-to-park.2018-12-12__14-06-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:06 training-cars-estate-cars.2018-12-12__14-06-39.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:06 training-cars-fast-cars.2018-12-12__14-06-41.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:06 training-cars-features.2018-12-12__14-06-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:06 training-cars-ferrari.2018-12-12__14-06-45.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:06 training-cars-fiat.2018-12-12__14-06-48.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:06 training-cars-ford.2018-12-12__14-06-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   352B 12 Dec 14:06 training-cars-fun-in-the-corners.2018-12-12__14-06-53.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:06 training-cars-fun-in-the-sun.2018-12-12__14-06-55.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:06 training-cars-gallery.2018-12-12__14-06-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:07 training-cars-good-for-big-families.2018-12-12__14-07-00.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:07 training-cars-good-for-dogs.2018-12-12__14-07-02.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   351B 12 Dec 14:07 training-cars-good-for-families.2018-12-12__14-07-04.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 14:07 training-cars-good-for-golf-clubs.2018-12-12__14-07-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   356B 12 Dec 14:07 training-cars-good-for-long-journeys.2018-12-12__14-07-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:07 training-cars-good-for-new-drivers.2018-12-12__14-07-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 14:07 training-cars-good-for-towing.2018-12-12__14-07-14.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:07 training-cars-good-in-snow.2018-12-12__14-07-16.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 14:07 training-cars-great-interiors.2018-12-12__14-07-18.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:07 training-cars-honda.2018-12-12__14-07-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:07 training-cars-hybrid-electric-cars.2018-12-12__14-07-23.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:07 training-cars-hyundai.2018-12-12__14-07-25.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:07 training-cars-infiniti.2018-12-12__14-07-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:07 training-cars-jaguar.2018-12-12__14-07-30.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:07 training-cars-jeep.2018-12-12__14-07-32.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 14:07 training-cars-kia.2018-12-12__14-07-35.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:07 training-cars-lamborghini.2018-12-12__14-07-37.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:07 training-cars-land-rover.2018-12-12__14-07-39.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:07 training-cars-less-than-10k.2018-12-12__14-07-42.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:07 training-cars-lexus.2018-12-12__14-07-44.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 14:07 training-cars-long-term-tests.2018-12-12__14-07-46.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:07 training-cars-lotus.2018-12-12__14-07-49.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 14:07 training-cars-low-company-car-tax.2018-12-12__14-07-51.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:07 training-cars-maserati.2018-12-12__14-07-53.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:07 training-cars-mazda.2018-12-12__14-07-56.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:07 training-cars-mclaren.2018-12-12__14-07-58.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:08 training-cars-mercedes-benz.2018-12-12__14-08-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   336B 12 Dec 14:08 training-cars-mg.2018-12-12__14-08-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:08 training-cars-mini.2018-12-12__14-08-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:08 training-cars-mitsubishi.2018-12-12__14-08-08.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:08 training-cars-motorcycles.2018-12-12__14-08-10.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:08 training-cars-news.2018-12-12__14-08-12.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:08 training-cars-nissan.2018-12-12__14-08-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:08 training-cars-peugeot.2018-12-12__14-08-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:08 training-cars-porsche.2018-12-12__14-08-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   357B 12 Dec 14:08 training-cars-raised-driving-position.2018-12-12__14-08-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:08 training-cars-reliable.2018-12-12__14-08-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:08 training-cars-renault.2018-12-12__14-08-29.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:08 training-cars-reviews.2018-12-12__14-08-31.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:08 training-cars-rolls-royce.2018-12-12__14-08-33.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:08 training-cars-seat.2018-12-12__14-08-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:08 training-cars-seven-seaters.2018-12-12__14-08-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:08 training-cars-skoda.2018-12-12__14-08-40.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:08 training-cars-smart.2018-12-12__14-08-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:08 training-cars-spare-wheel.2018-12-12__14-08-45.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:08 training-cars-ssangyong.2018-12-12__14-08-47.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:08 training-cars-subaru.2018-12-12__14-08-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:08 training-cars-suzuki.2018-12-12__14-08-52.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:08 training-cars-tesla.2018-12-12__14-08-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:08 training-cars-top-gear.2018-12-12__14-08-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:08 training-cars-toyota.2018-12-12__14-08-59.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:09 training-cars-vauxhall.2018-12-12__14-09-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:09 training-cars-volkswagen.2018-12-12__14-09-04.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   333B 12 Dec 14:05 training-cars.2018-12-12__14-05-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   371B 12 Dec 13:41 training-connect-better-business-business-solutions.2018-12-12__13-41-12.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   376B 12 Dec 13:41 training-connect-better-business-business-sustainability.2018-12-12__13-41-14.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   367B 12 Dec 13:41 training-connect-better-business-cyber-security.2018-12-12__13-41-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   363B 12 Dec 13:41 training-connect-better-business-innovation.2018-12-12__13-41-06.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   372B 12 Dec 13:41 training-connect-better-business-international-trade.2018-12-12__13-41-08.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   363B 12 Dec 13:41 training-connect-better-business-leadership.2018-12-12__13-41-10.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   352B 12 Dec 13:41 training-connect-better-business.2018-12-12__13-41-04.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   369B 12 Dec 13:41 training-connect-small-business-business-networks.2018-12-12__13-41-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   370B 12 Dec 13:41 training-connect-small-business-business-solutions.2018-12-12__13-41-23.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   368B 12 Dec 13:41 training-connect-small-business-business-support.2018-12-12__13-41-25.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   367B 12 Dec 13:41 training-connect-small-business-business-travel.2018-12-12__13-41-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   366B 12 Dec 13:41 training-connect-small-business-cyber-security.2018-12-12__13-41-30.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   366B 12 Dec 13:41 training-connect-small-business-driving-growth.2018-12-12__13-41-32.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   371B 12 Dec 13:41 training-connect-small-business-finance-and-funding.2018-12-12__13-41-34.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   362B 12 Dec 13:41 training-connect-small-business-innovation.2018-12-12__13-41-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   371B 12 Dec 13:41 training-connect-small-business-international-trade.2018-12-12__13-41-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   361B 12 Dec 13:41 training-connect-small-business-marketing.2018-12-12__13-41-40.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   376B 12 Dec 13:41 training-connect-small-business-operations-and-logistics.2018-12-12__13-41-42.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   367B 12 Dec 13:41 training-connect-small-business-sales-and-trade.2018-12-12__13-41-44.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   362B 12 Dec 13:41 training-connect-small-business-scaling-up.2018-12-12__13-41-46.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   363B 12 Dec 13:41 training-connect-small-business-sme-lending.2018-12-12__13-41-48.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   377B 12 Dec 13:41 training-connect-small-business-talent-culture-leadership.2018-12-12__13-41-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   356B 12 Dec 13:40 training-connect-small-business-tech.2018-12-12__13-40-35.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   351B 12 Dec 13:41 training-connect-small-business.2018-12-12__13-41-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   336B 12 Dec 13:41 training-connect.2018-12-12__13-41-02.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 13:36 training-education.2018-12-12__13-36-52.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 16:33 training-equity-release-mortgages.2018-12-12__16-33-30.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:33 training-equity-release.2018-12-12__16-33-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   334B 12 Dec 13:36 training-expat.2018-12-12__13-36-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:01 training-family-grandparents.2018-12-12__14-01-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:01 training-family-life.2018-12-12__14-01-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   365B 12 Dec 14:01 training-family-parenting-babies-and-toddlers.2018-12-12__14-01-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:01 training-family-parenting-teenagers.2018-12-12__14-01-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 14:01 training-family-parenting-young-adults.2018-12-12__14-01-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   360B 12 Dec 14:01 training-family-parenting-young-children.2018-12-12__14-01-23.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:01 training-family-parenting.2018-12-12__14-01-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 14:01 training-family-relationships.2018-12-12__14-01-25.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:01 training-family-schooling.2018-12-12__14-01-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   335B 12 Dec 14:01 training-family.2018-12-12__14-01-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:02 training-fashion-brands.2018-12-12__14-02-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   359B 12 Dec 14:02 training-fashion-british-fashion-awards.2018-12-12__14-02-12.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:02 training-fashion-events.2018-12-12__14-02-14.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   356B 12 Dec 14:02 training-fashion-london-fashion-week.2018-12-12__14-02-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:02 training-fashion-milan-fashion-week.2018-12-12__14-02-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 14:02 training-fashion-new-york-fashion-week.2018-12-12__14-02-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:02 training-fashion-news.2018-12-12__14-02-35.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:02 training-fashion-paris-fashion-week.2018-12-12__14-02-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:02 training-fashion-people.2018-12-12__14-02-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:02 training-fashion-royals.2018-12-12__14-02-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:02 training-fashion-shopping.2018-12-12__14-02-31.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:02 training-fashion-style.2018-12-12__14-02-33.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   336B 12 Dec 14:02 training-fashion.2018-12-12__14-02-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:03 training-food-and-drink-beer.2018-12-12__14-03-45.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   356B 12 Dec 14:03 training-food-and-drink-cake-recipes.2018-12-12__14-03-48.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   359B 12 Dec 14:03 training-food-and-drink-chicken-recipes.2018-12-12__14-03-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   361B 12 Dec 14:03 training-food-and-drink-chocolate-recipes.2018-12-12__14-03-53.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   361B 12 Dec 14:03 training-food-and-drink-christmas-recipes.2018-12-12__14-03-55.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 14:03 training-food-and-drink-cocktails.2018-12-12__14-03-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:04 training-food-and-drink-columnists.2018-12-12__14-04-00.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 14:04 training-food-and-drink-drinks.2018-12-12__14-04-02.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 14:04 training-food-and-drink-equipment.2018-12-12__14-04-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   352B 12 Dec 14:04 training-food-and-drink-features.2018-12-12__14-04-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:04 training-food-and-drink-gin.2018-12-12__14-04-10.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 14:04 training-food-and-drink-healthy-eating.2018-12-12__14-04-12.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   352B 12 Dec 14:04 training-food-and-drink-in-depth.2018-12-12__14-04-14.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:04 training-food-and-drink-news.2018-12-12__14-04-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   357B 12 Dec 14:04 training-food-and-drink-pubs-and-bars.2018-12-12__14-04-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   351B 12 Dec 14:04 training-food-and-drink-recipes.2018-12-12__14-04-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:04 training-food-and-drink-restaurants.2018-12-12__14-04-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   362B 12 Dec 14:04 training-food-and-drink-vegetarian-recipes.2018-12-12__14-04-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 14:04 training-food-and-drink-whisky.2018-12-12__14-04-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:04 training-food-and-drink-wine.2018-12-12__14-04-31.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:03 training-food-and-drink.2018-12-12__14-03-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 14:04 training-gardening-chelsea-flower-show.2018-12-12__14-04-37.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 14:04 training-gardening-columnists.2018-12-12__14-04-39.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:04 training-gardening-gardening-events.2018-12-12__14-04-42.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:04 training-gardening-gardens-to-visit.2018-12-12__14-04-44.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 14:04 training-gardening-grow-to-eat.2018-12-12__14-04-47.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 14:04 training-gardening-how-to-grow.2018-12-12__14-04-49.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:04 training-gardening-problem-solving.2018-12-12__14-04-51.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   360B 12 Dec 14:04 training-gardening-tools-and-accessories.2018-12-12__14-04-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:04 training-gardening-tools.2018-12-12__14-04-56.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:04 training-gardening.2018-12-12__14-04-35.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:27 training-health-fitness-body.2018-12-12__16-27-49.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   357B 12 Dec 16:27 training-health-fitness-doctors-diary.2018-12-12__16-27-52.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:27 training-health-fitness-mind.2018-12-12__16-27-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 16:27 training-health-fitness-nutrition-diet.2018-12-12__16-27-58.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 16:27 training-health-fitness-nutrition.2018-12-12__16-27-56.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:27 training-health-fitness.2018-12-12__16-27-47.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 16:33 training-insurance-car.2018-12-12__16-33-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 16:33 training-insurance-health.2018-12-12__16-33-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:33 training-insurance-home.2018-12-12__16-33-41.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:33 training-insurance-life.2018-12-12__16-33-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 16:33 training-insurance-pet.2018-12-12__16-33-45.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 16:33 training-insurance-travel.2018-12-12__16-33-47.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 16:33 training-insurance-warranty.2018-12-12__16-33-49.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 16:33 training-insurance.2018-12-12__16-33-32.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:05 training-interiors.2018-12-12__14-05-29.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 16:32 training-investing-bonds.2018-12-12__16-32-23.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 16:32 training-investing-buy-to-let.2018-12-12__16-32-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 16:32 training-investing-funds.2018-12-12__16-32-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:32 training-investing-gold.2018-12-12__16-32-30.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:32 training-investing-isas.2018-12-12__16-32-32.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:32 training-investing-jisa.2018-12-12__16-32-34.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:32 training-investing-news.2018-12-12__16-32-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 16:32 training-investing-shares.2018-12-12__16-32-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 16:32 training-investing-sipps.2018-12-12__16-32-40.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 16:32 training-investing.2018-12-12__16-32-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:01 training-lifestyle-all.2018-12-12__14-01-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 14:01 training-lifestyle-stella-magazine.2018-12-12__14-01-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:03 training-luxury-art.2018-12-12__14-03-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:03 training-luxury-design.2018-12-12__14-03-08.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 14:03 training-luxury-drinking-and-dining.2018-12-12__14-03-10.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:03 training-luxury-jewellery.2018-12-12__14-03-12.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:03 training-luxury-mens-style.2018-12-12__14-03-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:03 training-luxury-motoring.2018-12-12__14-03-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:03 training-luxury-our-experts.2018-12-12__14-03-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:03 training-luxury-pictures.2018-12-12__14-03-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   361B 12 Dec 14:03 training-luxury-property-and-architecture.2018-12-12__14-03-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:03 training-luxury-technology.2018-12-12__14-03-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 14:03 training-luxury-travel.2018-12-12__14-03-29.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:03 training-luxury-watches.2018-12-12__14-03-31.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:03 training-luxury-womens-style.2018-12-12__14-03-34.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   335B 12 Dec 14:03 training-luxury.2018-12-12__14-03-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:01 training-men-active.2018-12-12__14-01-52.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:01 training-men-fatherhood.2018-12-12__14-01-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:01 training-men-health.2018-12-12__14-01-56.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 14:01 training-men-relationships.2018-12-12__14-01-58.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:02 training-men-style.2018-12-12__14-02-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:02 training-men-the-filter.2018-12-12__14-02-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:02 training-men-thinking-man.2018-12-12__14-02-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   332B 12 Dec 14:01 training-men.2018-12-12__14-01-50.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 16:32 training-money-all.2018-12-12__16-32-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 16:32 training-money-ask-a-money-expert.2018-12-12__16-32-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   351B 12 Dec 16:32 training-money-consumer-affairs.2018-12-12__16-32-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 16:32 training-money-fame-fortune.2018-12-12__16-32-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 16:32 training-money-future-of-money.2018-12-12__16-32-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 16:32 training-money-jessica-investigates.2018-12-12__16-32-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 16:32 training-money-money-makeover.2018-12-12__16-32-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 16:32 training-money-special-reports.2018-12-12__16-32-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:32 training-money-student-money.2018-12-12__16-32-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   334B 12 Dec 16:32 training-money.2018-12-12__16-32-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 13:35 training-news-data.2018-12-12__13-35-55.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 13:35 training-news-defence.2018-12-12__13-35-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 13:35 training-news-entertainment.2018-12-12__13-35-59.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 13:36 training-news-matt.2018-12-12__13-36-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 13:36 training-news-pictures.2018-12-12__13-36-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   336B 12 Dec 13:36 training-news-uk.2018-12-12__13-36-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 13:36 training-news-weird.2018-12-12__13-36-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 13:36 training-news-world.2018-12-12__13-36-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   333B 12 Dec 13:35 training-news.2018-12-12__13-35-53.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   349B 12 Dec 13:36 training-obituaries-celebrity.2018-12-12__13-36-26.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 13:36 training-obituaries-culture.2018-12-12__13-36-28.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 13:36 training-obituaries-finance.2018-12-12__13-36-30.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 13:36 training-obituaries-law.2018-12-12__13-36-32.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 13:36 training-obituaries-medicine.2018-12-12__13-36-33.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 13:36 training-obituaries-military.2018-12-12__13-36-37.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 13:36 training-obituaries-politics.2018-12-12__13-36-39.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 13:36 training-obituaries-religion.2018-12-12__13-36-41.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 13:36 training-obituaries-royalty.2018-12-12__13-36-43.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 13:36 training-obituaries-science.2018-12-12__13-36-46.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 13:36 training-obituaries-sport.2018-12-12__13-36-48.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 13:36 training-obituaries.2018-12-12__13-36-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 13:36 training-opinion-cartoons.2018-12-12__13-36-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 13:36 training-opinion-columnists.2018-12-12__13-36-16.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 13:36 training-opinion-letters.2018-12-12__13-36-18.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 13:36 training-opinion-morning-briefing.2018-12-12__13-36-20.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   351B 12 Dec 13:36 training-opinion-telegraph-view.2018-12-12__13-36-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   336B 12 Dec 13:36 training-opinion.2018-12-12__13-36-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 16:33 training-pensions-retirement-annuities.2018-12-12__16-33-53.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   367B 12 Dec 16:33 training-pensions-retirement-financial-planning.2018-12-12__16-33-55.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   364B 12 Dec 16:33 training-pensions-retirement-inheritance-tax.2018-12-12__16-33-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 16:33 training-pensions-retirement-news.2018-12-12__16-33-59.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   363B 12 Dec 16:34 training-pensions-retirement-tax-retirement.2018-12-12__16-34-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:33 training-pensions-retirement.2018-12-12__16-33-51.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   358B 12 Dec 16:34 training-personal-banking-credit-cards.2018-12-12__16-34-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   362B 12 Dec 16:34 training-personal-banking-current-accounts.2018-12-12__16-34-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   355B 12 Dec 16:34 training-personal-banking-mortgages.2018-12-12__16-34-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   360B 12 Dec 16:34 training-personal-banking-personal-loans.2018-12-12__16-34-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   353B 12 Dec 16:34 training-personal-banking-savings.2018-12-12__16-34-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 16:34 training-personal-banking.2018-12-12__16-34-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 14:05 training-pets-news-features.2018-12-12__14-05-34.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   333B 12 Dec 14:05 training-pets.2018-12-12__14-05-31.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 13:35 training-politics.2018-12-12__13-35-51.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 16:32 training-property-abroad.2018-12-12__16-32-44.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:32 training-property-buy-to-let.2018-12-12__16-32-46.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 16:32 training-property-buy.2018-12-12__16-32-48.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:32 training-property-commercial.2018-12-12__16-32-51.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 16:32 training-property-house-prices.2018-12-12__16-32-53.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   347B 12 Dec 16:32 training-property-interiors.2018-12-12__16-32-55.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 16:32 training-property-luxury.2018-12-12__16-32-57.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 16:32 training-property-news.2018-12-12__16-32-59.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   354B 12 Dec 16:33 training-property-property-doctors.2018-12-12__16-33-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 16:33 training-property-renting.2018-12-12__16-33-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 16:33 training-property-retirement.2018-12-12__16-33-07.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   342B 12 Dec 16:33 training-property-sell.2018-12-12__16-33-09.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 16:33 training-property-uk.2018-12-12__16-33-11.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   350B 12 Dec 16:33 training-property-west-country.2018-12-12__16-33-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 16:32 training-property.2018-12-12__16-32-42.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:05 training-recommended-home.2018-12-12__14-05-20.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:05 training-recommended-kids.2018-12-12__14-05-22.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:05 training-recommended-leisure.2018-12-12__14-05-24.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:05 training-recommended-tech.2018-12-12__14-05-27.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 14:05 training-recommended.2018-12-12__14-05-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 13:36 training-royal-family.2018-12-12__13-36-54.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 16:34 training-tax-capital-gains.2018-12-12__16-34-17.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 16:34 training-tax-credits.2018-12-12__16-34-19.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 16:34 training-tax-income-tax.2018-12-12__16-34-21.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 16:34 training-tax-inheritance.2018-12-12__16-34-23.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 16:34 training-tax-news.2018-12-12__16-34-25.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 16:34 training-tax-return.2018-12-12__16-34-27.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   346B 12 Dec 16:34 training-tax-self-employed.2018-12-12__16-34-29.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   332B 12 Dec 16:34 training-tax.2018-12-12__16-34-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   335B 12 Dec 16:37 training-travel.2018-12-12__16-37-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   335B 12 Dec 17:51 training-travel.2018-12-12__17-51-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 17:51 training-travel.converted.2018-12-12__17-51-10.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:05 training-weddings-advice.2018-12-12__14-05-08.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:05 training-weddings-engagement.2018-12-12__14-05-10.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:05 training-weddings-essentials.2018-12-12__14-05-13.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:05 training-weddings-gifts.2018-12-12__14-05-15.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:05 training-weddings-style.2018-12-12__14-05-01.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   348B 12 Dec 14:05 training-weddings-traditions.2018-12-12__14-05-03.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   344B 12 Dec 14:05 training-weddings-venues.2018-12-12__14-05-05.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   337B 12 Dec 14:04 training-weddings.2018-12-12__14-04-58.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:05 training-wellbeing.2018-12-12__14-05-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:01 training-women-business.2018-12-12__14-01-32.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 14:01 training-women-columnists.2018-12-12__14-01-34.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:01 training-women-family.2018-12-12__14-01-36.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   341B 12 Dec 14:01 training-women-health.2018-12-12__14-01-38.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:01 training-women-life.2018-12-12__14-01-40.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   343B 12 Dec 14:01 training-women-politics.2018-12-12__14-01-42.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   338B 12 Dec 14:01 training-women-sex.2018-12-12__14-01-44.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   339B 12 Dec 14:01 training-women-work.2018-12-12__14-01-48.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   334B 12 Dec 14:01 training-women.2018-12-12__14-01-29.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   359B 12 Dec 16:34 training-work-salary-national-insurance.2018-12-12__16-34-33.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   345B 12 Dec 16:34 training-work-salary-news.2018-12-12__16-34-35.zip
--rw-r--r--  1 newmanm  TMG\Domain Users   340B 12 Dec 16:34 training-work-salary.2018-12-12__16-34-31.zip
+beauty/body
+beauty/events
+beauty/face
+beauty/hair/nails
+beauty/make/up
+beauty/nails
+beauty/news
+beauty/people
+beauty/skin
+beauty/tips/tutorials
+beauty
+bills-and-utilities/broadband
+bills-and-utilities/gas/electric
+bills-and-utilities/phone
+bills-and-utilities/renewable/energy
+bills-and-utilities/tv
+bills-and-utilities
+cars/a/z
+cars/advice
+cars/alfa/romeo
+cars/alpina
+cars/aston/martin
+cars/audi
+cars/bentley
+cars/best/cars/for/three/child/seats
+cars/bmw
+cars/buggy/friendly
+cars/cheap/to/run
+cars/citroen
+cars/classic
+cars/comment/alex/robbins
+cars/comment/andrew/english
+cars/comment/andrew/frankel
+cars/comment/ben/collins
+cars/comment/chris/knapman
+cars/comment/erin/baker
+cars/comment/james/foxall
+cars/comment/rebecca/jackson
+cars/comment/steve/huntingford
+cars/comment
+cars/dacia
+cars/ds
+cars/easy/access
+cars/easy/to/park
+cars/estate/cars
+cars/fast/cars
+cars/features
+cars/ferrari
+cars/fiat
+cars/ford
+cars/fun/in/the/corners
+cars/fun/in/the/sun
+cars/gallery
+cars/good/for/big/families
+cars/good/for/dogs
+cars/good/for/families
+cars/good/for/golf/clubs
+cars/good/for/long/journeys
+cars/good/for/new/drivers
+cars/good/for/towing
+cars/good/in/snow
+cars/great/interiors
+cars/honda
+cars/hybrid/electric/cars
+cars/hyundai
+cars/infiniti
+cars/jaguar
+cars/jeep
+cars/kia
+cars/lamborghini
+cars/land/rover
+cars/less/than/10k
+cars/lexus
+cars/long/term/tests
+cars/lotus
+cars/low/company/car/tax
+cars/maserati
+cars/mazda
+cars/mclaren
+cars/mercedes/benz
+cars/mg
+cars/mini
+cars/mitsubishi
+cars/motorcycles
+cars/news
+cars/nissan
+cars/peugeot
+cars/porsche
+cars/raised/driving/position
+cars/reliable
+cars/renault
+cars/reviews
+cars/rolls/royce
+cars/seat
+cars/seven/seaters
+cars/skoda
+cars/smart
+cars/spare/wheel
+cars/ssangyong
+cars/subaru
+cars/suzuki
+cars/tesla
+cars/top/gear
+cars/toyota
+cars/vauxhall
+cars/volkswagen
+cars
+connect/better/business/business/solutions
+connect/better/business/business/sustainability
+connect/better/business/cyber/security
+connect/better/business/innovation
+connect/better/business/international/trade
+connect/better/business/leadership
+connect/better/business
+connect/small/business/business/networks
+connect/small/business/business/solutions
+connect/small/business/business/support
+connect/small/business/business/travel
+connect/small/business/cyber/security
+connect/small/business/driving/growth
+connect/small/business/finance-and-funding
+connect/small/business/innovation
+connect/small/business/international/trade
+connect/small/business/marketing
+connect/small/business/operations-and-logistics
+connect/small/business/sales-and-trade
+connect/small/business/scaling/up
+connect/small/business/sme/lending
+connect/small/business/talent/culture/leadership
+connect/small/business/tech
+connect/small/business
+connect
+education
+equity/release/mortgages
+equity/release
+expat
+family/grandparents
+family/life
+family/parenting/babies-and-toddlers
+family/parenting/teenagers
+family/parenting/young/adults
+family/parenting/young/children
+family/parenting
+family/relationships
+family/schooling
+family
+fashion/brands
+fashion/british/fashion/awards
+fashion/events
+fashion/london/fashion/week
+fashion/milan/fashion/week
+fashion/new/york/fashion/week
+fashion/news
+fashion/paris/fashion/week
+fashion/people
+fashion/royals
+fashion/shopping
+fashion/style
+fashion
+food-and-drink/beer
+food-and-drink/cake/recipes
+food-and-drink/chicken/recipes
+food-and-drink/chocolate/recipes
+food-and-drink/christmas/recipes
+food-and-drink/cocktails
+food-and-drink/columnists
+food-and-drink/drinks
+food-and-drink/equipment
+food-and-drink/features
+food-and-drink/gin
+food-and-drink/healthy/eating
+food-and-drink/in/depth
+food-and-drink/news
+food-and-drink/pubs-and-bars
+food-and-drink/recipes
+food-and-drink/restaurants
+food-and-drink/vegetarian/recipes
+food-and-drink/whisky
+food-and-drink/wine
+food-and-drink
+gardening/chelsea/flower/show
+gardening/columnists
+gardening/gardening/events
+gardening/gardens/to/visit
+gardening/grow/to/eat
+gardening/how/to/grow
+gardening/problem/solving
+gardening/tools-and-accessories
+gardening/tools
+gardening
+health/fitness/body
+health/fitness/doctors/diary
+health/fitness/mind
+health/fitness/nutrition/diet
+health/fitness/nutrition
+health/fitness
+insurance/car
+insurance/health
+insurance/home
+insurance/life
+insurance/pet
+insurance/travel
+insurance/warranty
+insurance
+interiors
+investing/bonds
+investing/buy/to/let
+investing/funds
+investing/gold
+investing/isas
+investing/jisa
+investing/news
+investing/shares
+investing/sipps
+investing
+lifestyle/all
+lifestyle/stella/magazine
+luxury/art
+luxury/design
+luxury/drinking-and-dining
+luxury/jewellery
+luxury/mens/style
+luxury/motoring
+luxury/our/experts
+luxury/pictures
+luxury/property-and-architecture
+luxury/technology
+luxury/travel
+luxury/watches
+luxury/womens/style
+luxury
+men/active
+men/fatherhood
+men/health
+men/relationships
+men/style
+men/the/filter
+men/thinking/man
+men
+money/all
+money/ask/a/money/expert
+money/consumer/affairs
+money/fame/fortune
+money/future/of/money
+money/jessica/investigates
+money/money/makeover
+money/special/reports
+money/student/money
+money
+news/data
+news/defence
+news/entertainment
+news/matt
+news/pictures
+news/uk
+news/weird
+news/world
+news
+obituaries/celebrity
+obituaries/culture
+obituaries/finance
+obituaries/law
+obituaries/medicine
+obituaries/military
+obituaries/politics
+obituaries/religion
+obituaries/royalty
+obituaries/science
+obituaries/sport
+obituaries
+opinion/cartoons
+opinion/columnists
+opinion/letters
+opinion/morning/briefing
+opinion/telegraph/view
+opinion
+pensions/retirement/annuities
+pensions/retirement/financial/planning
+pensions/retirement/inheritance/tax
+pensions/retirement/news
+pensions/retirement/tax/retirement
+pensions/retirement
+personal/banking/credit/cards
+personal/banking/current/accounts
+personal/banking/mortgages
+personal/banking/personal/loans
+personal/banking/savings
+personal/banking
+pets/news/features
+pets
+politics
+property/abroad
+property/buy/to/let
+property/buy
+property/commercial
+property/house/prices
+property/interiors
+property/luxury
+property/news
+property/property/doctors
+property/renting
+property/retirement
+property/sell
+property/uk
+property/west/country
+property
+recommended/home
+recommended/kids
+recommended/leisure
+recommended/tech
+recommended
+royal/family
+tax/capital/gains
+tax/credits
+tax/income/tax
+tax/inheritance
+tax/news
+tax/return
+tax/self/employed
+tax
+travel
+weddings/advice
+weddings/engagement
+weddings/essentials
+weddings/gifts
+weddings/style
+weddings/traditions
+weddings/venues
+weddings
+wellbeing
+women/business
+women/columnists
+women/family
+women/health
+women/life
+women/politics
+women/sex
+women/work
+women
+work/salary/national/insurance
+work/salary/news
+work/salary

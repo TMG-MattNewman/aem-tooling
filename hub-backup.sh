@@ -9,7 +9,7 @@ CRX_CREATE_PATH="crx/packmgr/service/.json${PACKAGE_PATH}"
 CRX_UPDATE_PATH='crx/packmgr/update.jsp'
 TIMEOUT=2
 
-outputDir='hub-packages'
+outputDir='hub-moving'
 path=''
 pathSupplied=0
 outputDirSupplied=0

@@ -17,7 +17,6 @@ do
     esac
 done
 
-
 # if path starts with a forward slash, strip it, because one exists at the end of $env
 if [[ ${path} =~ ^/ ]]; then
     path="${path:1}"
