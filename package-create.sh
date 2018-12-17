@@ -20,7 +20,7 @@ do
     esac
 done
 
-if [[ ! ${nameSupplied} || ! ${nameSupplied} ]]; then
+if [[ ${pathSupplied} -eq 0 || ${nameSupplied} -eq 0 ]]; then
     echo "path and packageName are required parameters for creating a package!"
     exit 1;
 fi

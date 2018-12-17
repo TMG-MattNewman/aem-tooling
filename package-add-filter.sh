@@ -81,12 +81,4 @@ if [[ ! "$addFilters" == "200" ]]; then
     exit 1;
 fi
 
-#curl -u admin:admin -X POST https://localhost:4502/crx/packmgr/update.jsp \
-#-F path=/etc/packages/my_packages/example-package.zip \
-#-F packageName=example-package \
-#-F groupName=my_packages \
-#-F filter="[\
-#{\"root\" : \"/content/telegraph/news/jcr:content\", \"rules\": []},\
-#{\"root\" : \"/content/telegraph/news/application\", \"rules\": []},\
-#]" \
-#-F '_charset_=UTF-8'
+# e.g: curl -i --connect-timeout 1     --user admin:admin     -X POST http://localhost:4502/crx/packmgr/update.jsp     -F path=/etc/packages/my_packages/test.zip     -F packageName=test     -F groupName=my_packages     -F filter="[{"root" : "/content/telegraph/test/jcr:content", "rules": []}]"     -F '_charset_=UTF-8'

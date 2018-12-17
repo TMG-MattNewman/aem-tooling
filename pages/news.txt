@@ -29,4 +29,4 @@ obituaries/science
 obituaries/sport
 expat
 education
-royal-family	
+royal-family

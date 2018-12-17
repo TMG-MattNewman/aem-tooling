@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 PACKAGE_MANAGER='crx/packmgr/index.jsp'
-CRX_UPDATE_PATH='crx/packmgr/update.jsp'
+PACKAGE_UPDATE_PATH='crx/packmgr/update.jsp'
+PACKAGE_SERVICE_PATH='crx/packmgr/service/.json'
 TIMEOUT=1
 
 outputDir='downloads'
@@ -33,7 +34,7 @@ do
     esac
 done
 
-if [[ ! ${pathSupplied} ]]; then
+if [[ ! ${pathSupplied} -eq 1 ]]; then
     echo "a path is required for working with packages!"
     exit 1;
 fi
@@ -46,9 +47,8 @@ fi
 # check access to env using username & password
 ./test-connection.sh -e ${env} -u ${auth} || exit 1;
 
-packagePath="/etc/packages/${packageGroup}/"
-createPath="crx/packmgr/service/.json${packagePath}"
-updatePath=""
+packagePath="etc/packages/${packageGroup}/"
+createPath="${PACKAGE_SERVICE_PATH}/${packagePath}"
 
 # if path starts with a forward slash, strip it, because one exists at the end of $env
 if [[ ! ${env} =~ /$ ]]; then
@@ -63,24 +63,38 @@ truncatedPackageName=$(./path-manipulation.sh -p ${fullPath} -s) # strip package
 packageName=${truncatedPackageName//\//-} # replace \ with -
 packageZip=${packagePath}${packageName}.zip
 
-CREATE_PARAMS="-p ${env}${createPath} -u ${auth} -n ${packageName} -g ${packageGroup}"
-ADD_FILTER_PARAMS=""
+CREATE_PACKAGE_PARAMS="-p ${env}${createPath} -u ${auth} -n ${packageName} -g ${packageGroup}"
+PACKAGE_ADD_FILTER_PARAMS="-e ${env} -u ${auth} -p ${fullPath} -n ${packageName} -g ${packageGroup}"
+PACKAGE_BUILD_PARAMS="-z ${env}${PACKAGE_SERVICE_PATH}/${packageZip} -u ${auth}"
+PACKAGE_DOWNLOAD_PARAMS="-z ${env}${packageZip} -u ${auth} -n ${packageName} -o ${outputDir}"
 
-if [[ ${verbose} ]]; then
+if [[ ${verbose} -eq 1 ]]; then
     echo "fullPath=${fullPath}"
     echo "packageName=${packageName}"
     echo "packageGroup=${packageGroup}"
     echo "packageZip=${packageZip}"
-    CREATE_PARAMS+=" -v"
-    ADD_FILTER_PARAMS+=" -v"
-    echo "CREATE_PARAMS=${CREATE_PARAMS}"
-    echo "ADD_FILTER_PARAMS=${ADD_FILTER_PARAMS}"
+    CREATE_PACKAGE_PARAMS+=" -v"
+    PACKAGE_ADD_FILTER_PARAMS+=" -v"
+    PACKAGE_BUILD_PARAMS+=" -v"
+    PACKAGE_DOWNLOAD_PARAMS+=" -v"
+    echo "CREATE_PARAMS=${CREATE_PACKAGE_PARAMS}"
+    echo "ADD_FILTER_PARAMS=${PACKAGE_ADD_FILTER_PARAMS}"
+    echo "PACKAGE_BUILD_PARAMS=${PACKAGE_BUILD_PARAMS}"
+    echo "PACKAGE_DOWNLOAD_PARAMS=${PACKAGE_DOWNLOAD_PARAMS}"
 fi
 
-if [[ ${create} ]]; then
-    ./package-create.sh ${CREATE_PARAMS}
+if [[ ${create} -eq 1 ]]; then
+    ./package-create.sh ${CREATE_PACKAGE_PARAMS}
 fi
 
-if [[ ${addFilter} ]]; then
-    ./package-add-filters.sh ${ADD_FILTER_PARAMS}
+if [[ ${addFilter} -eq 1 ]]; then
+    ./package-add-filter.sh ${PACKAGE_ADD_FILTER_PARAMS}
+fi
+
+if [[ ${build} -eq 1 ]]; then
+    ./package-build.sh ${PACKAGE_BUILD_PARAMS}
+fi
+
+if [[ ${download} -eq 1 ]]; then
+    ./package-download.sh ${PACKAGE_DOWNLOAD_PARAMS}
 fi

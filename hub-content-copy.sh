@@ -59,32 +59,21 @@ toPath=$(./path-manipulation.sh -p ${to} -j)
 fromPath="${fromPath}/par"
 toPath="${toPath}/par"
 
-backupFromPath=$(./path-manipulation.sh -p ${fromPath} -x)
-backupToPath=$(./path-manipulation.sh -p ${toPath} -x)
+deletePath=$(./path-manipulation.sh -p ${toPath} -x)
 
-# create backup package
-BACKUP_PARAMS="-p ${backupFromPath} -e ${env} -u ${auth} -o hub-moving"
 MOVE_PARAMS="-u ${auth} -e ${env} -f ${fromPath} -t /${toPath}"
-DELETE_PARAMS="-u $auth -e ${env} -p /${backupToPath}/*"
+DELETE_PARAMS="-u $auth -e ${env} -p /${deletePath}/*"
 
 if [[ ${verbose} ]]; then
     MOVE_PARAMS+=" -v"
-    BACKUP_PARAMS+=" -v"
     DELETE_PARAMS+=" -v"
     echo "fromPath=${fromPath}"
-    echo "backupFromPath=${backupFromPath}"
     echo "toPath=${toPath}"
-    echo "backupToPath=${backupToPath}"
-    echo "BACKUP_PARAMS=${BACKUP_PARAMS}"
     echo "MOVE_PARAMS=${MOVE_PARAMS}"
     echo "DELETE_PARAMS=${DELETE_PARAMS}"
 fi
 
-# backup both to and from pages ...
-#./hub-backup.sh ${BACKUP_PARAMS}
-# as the last -p param will be the one used, just add it to the end and re-run
-#BACKUP_PARAMS+=" -p ${backupToPath}"
-#./hub-backup.sh ${BACKUP_PARAMS}
+# TODO: a backup-step here?
 
 # now need to delete the target (to) node in case it already exists
 ./delete-node.sh ${DELETE_PARAMS}

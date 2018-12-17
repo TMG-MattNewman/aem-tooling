@@ -3,7 +3,7 @@
 DEFAULT_ENV='http://aem-docker-training.aws-preprod.telegraph.co.uk:4502/'
 LOCALHOST='http://localhost:4502/'
 ROOTPAGE='libs/cq/core/content/welcome.html'
-TIMEOUT=2
+TIMEOUT=1
 
 HUB_RENDERER='telegraph/core/commons/renderers/hubRenderer'
 HUB_TEMPLATE='/apps/telegraph/core/commons/templates/hubTemplate'
@@ -79,11 +79,9 @@ fi
 if [[ ${local} ]]; then
   BACKUP_PARAMS+=" -l"
 fi
-if [[ ${verbose} ]]; then
-  BACKUP_PARAMS+=" -v"
-fi
 
 if [[ ${verbose} ]]; then
+    BACKUP_PARAMS+=" -v"
     echo "env=${env}"
     echo "path=${path}"
     echo "INDEX_RENDERER=${INDEX_RENDERER}"
@@ -107,9 +105,10 @@ if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
     exit 1;
 fi
 
-#./hub-backup.sh ${BACKUP_PARAMS}
-
 # TODO:
+#
+#./hub-backup.sh ${BACKUP_PARAMS}
+#
 # store nodes seen - where ... google doc?
 # post the json response to something that ingests it??
 # flag/output new ones
