@@ -20,13 +20,14 @@ toProvided=0
 #   -l = use localhost as env
 #   -v = verbose output
 
-while getopts  "f:t:e:u:clv" OPTION
+while getopts  "f:t:e:u:dmlv" OPTION
 do
     case $OPTION in
         f) from=$OPTARG; fromProvided=1;;
         t) to=$OPTARG; toProvided=1;;
         e) env=$OPTARG;;
         u) auth=$OPTARG;;
+        d) fromDuplicate=1;;
         m) move=1;;
         l) local=1;;
         v) verbose=1;;
@@ -48,6 +49,10 @@ fi
 # if copy flag is there, change operation to copy instead of move
 if [[ ${move} ]]; then
     operation='move'
+fi
+
+if [[ ${fromDuplicate} ]]; then
+    from="${from/\//2/}"
 fi
 
 fromPath=$(./aem-path-adapter.sh -p ${from} -j)

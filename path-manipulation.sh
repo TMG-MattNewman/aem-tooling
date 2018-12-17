@@ -5,7 +5,6 @@
 #   -j = append /jcr:content
 #   -v = verbose output
 
-
 while getopts  "p:jxv" OPTION
 do
     case $OPTION in

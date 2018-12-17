@@ -1,0 +1,81 @@
+curl -u admin:admin -X POST http://aem-docker-training.aws-preprod.telegraph.co.uk:4502/crx/packmgr/update.jsp \
+-F path=/etc/packages/hub-migrated-manual/money.zip \
+-F packageName=money \
+-F groupName=hub-migrated-manual \
+-F filter="[\
+{\"root\" : \"/content/telegraph/money/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/all/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/ask-a-money-expert/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/consumer-affairs/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/fame-fortune/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/future-of-money/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/jessica-investigates/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/money-makeover/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/special-reports/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/money/student-money/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/bonds/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/buy-to-let/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/funds/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/gold/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/isas/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/jisa/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/news/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/shares/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/investing/sipps/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/abroad/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/buy-to-let/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/buy/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/commercial/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/house-prices/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/interiors/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/luxury/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/news/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/property-doctors/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/renting/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/retirement/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/sell/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/uk/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/property/west-country/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/bills-and-utilities/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/bills-and-utilities/broadband/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/bills-and-utilities/gas-electric/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/bills-and-utilities/phone/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/bills-and-utilities/renewable-energy/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/bills-and-utilities/tv/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/equity-release/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/equity-release/mortgages/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/car/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/health/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/home/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/life/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/pet/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/travel/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/insurance/warranty/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/pensions-retirement/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/pensions-retirement/annuities/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/pensions-retirement/financial-planning/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/pensions-retirement/inheritance-tax/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/pensions-retirement/news/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/pensions-retirement/tax-retirement/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/personal-banking/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/personal-banking/credit-cards/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/personal-banking/current-accounts/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/personal-banking/mortgages/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/personal-banking/personal-loans/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/personal-banking/savings/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/capital-gains/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/credits/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/income-tax/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/inheritance/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/news/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/return/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/tax/self-employed/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/work-salary/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/work-salary/national-insurance/jcr:content\", \"rules\": []}, \
+{\"root\" : \"/content/telegraph/work-salary/news/jcr:content\", \"rules\": []}, \
+]" \
+-F '_charset_=UTF-8'
