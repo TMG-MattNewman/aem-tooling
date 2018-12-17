@@ -8,6 +8,7 @@ chmod +x *.sh
 
 this makes the scripts executable, so then it can be run from the same directory by just calling the script and passing it the path of the page you want to convert, e.g:
 
+## Hub conversion
 ```
 ./hub-converter.sh gaming
 ```
@@ -20,12 +21,28 @@ the script defaults to pointing to training, but can be pointed to a different e
 
 the path will prepend /content/telegraph for you, so you don't need that part
 
-## Help ... I think I messed up:
+## Copying content
+```
+./hub-content-copy.sh -f gaming2/reviews -t gaming/reviews 
+```
 
-Don't worry these scripts do a certain amount of precautionary actions, creating backup packages and downloading them, so everything is fairly easily reversible, if you converted a page by mistake and want to change it back, try adding the -i parameter, e.g:
+to do this for many pages, just loop over a list in a file:
+```
+while read line; do ./hub-content-copy.sh -d -f $line -t $line ; done < ./news.txt
+```
+
+## Creating a package:
+```
+./package.sh -p test -c -a -b -d
+```
+
+## Generating filters:
+```
+./generate-filters.sh gaming
+```
+
+again, for many, just iterate over a list and output them to another file (in this case ./filters.txt):
 
 ```
-./hub-converter.sh -p gaming -i
-``` 
-
-Should change gaming back to an old hub page
+while read line; do ./generate-filters.sh $line ; done < ./news.txt > ./filters.txt
+```
