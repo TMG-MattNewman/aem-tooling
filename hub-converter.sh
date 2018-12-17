@@ -72,13 +72,7 @@ if [[ ${invert} ]]; then
 fi
 
 # create backup package
-BACKUP_PARAMS="-p ${path} -e ${env} -u ${auth}"
-if [[ ${invert} ]]; then
-  BACKUP_PARAMS+=" -i"
-fi
-if [[ ${local} ]]; then
-  BACKUP_PARAMS+=" -l"
-fi
+BACKUP_PARAMS="-p ${path} -e ${env} -u ${auth} -c -a -b -d"
 
 if [[ ${verbose} ]]; then
     BACKUP_PARAMS+=" -v"
@@ -90,12 +84,7 @@ if [[ ${verbose} ]]; then
     echo "HUB_TEMPLATE=${HUB_TEMPLATE}"
 fi
 
-# check access to env using username & password
-connectStatus=$(curl --write-out %{http_code} --silent --output /dev/null -I --user $auth -L --connect-timeout $TIMEOUT $env$ROOTPAGE)
-if [[ ! "$connectStatus" == "200" ]]; then
-    echo "couldn't connect using: curl -L --user $auth $env"
-    exit 1;
-fi
+./test-connection.sh -e ${env} -u ${auth} || exit 1;
 
 # check page exists and is a hubTemplate
 pageJson=$(curl --silent --user $auth -L --connect-timeout $TIMEOUT $env$path.1.json)
@@ -105,10 +94,12 @@ if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
     exit 1;
 fi
 
+
+# create/download backup package
+./package.sh ${BACKUP_PARAMS}
+
+
 # TODO:
-#
-#./hub-backup.sh ${BACKUP_PARAMS}
-#
 # store nodes seen - where ... google doc?
 # post the json response to something that ingests it??
 # flag/output new ones
