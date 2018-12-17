@@ -3,7 +3,7 @@
 DEFAULT_ENV='http://aem-docker-training.aws-preprod.telegraph.co.uk:4502/'
 LOCALHOST='http://localhost:4502/'
 ROOTPAGE='crx/packmgr/index.jsp'
-PACKAGE_GROUP='hub-migration'
+PACKAGE_GROUP='hub-manual-builds'
 PACKAGE_PATH="/etc/packages/${PACKAGE_GROUP}/"
 CRX_CREATE_PATH="crx/packmgr/service/.json${PACKAGE_PATH}"
 CRX_UPDATE_PATH='crx/packmgr/update.jsp'
@@ -75,6 +75,9 @@ if [[ ${verbose} ]]; then
 fi
 
 # create package
+if [[ ${verbose} ]]; then
+    echo "creating package"
+fi
 createPackage=$(curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}\?cmd\=create -d packageName=${packageName} -d groupName=${PACKAGE_GROUP})
 if [[ ! "$createPackage" == "200" ]]; then
     echo "failed to create package: curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}\?cmd\=create -d packageName=${packageName} -d groupName=${PACKAGE_GROUP}"
@@ -82,6 +85,9 @@ if [[ ! "$createPackage" == "200" ]]; then
 fi
 
 # add filters
+if [[ ${verbose} ]]; then
+    echo "adding filters"
+fi
 addFilters=$(curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_UPDATE_PATH} -F path=${packageZip} -F packageName=${packageName} -F groupName=${PACKAGE_GROUP} -F filter="[{\"root\" : \"/${path}\", \"rules\": []}]" -F '_charset_=UTF-8')
 if [[ ! "$addFilters" == "200" ]]; then
     echo "failed to add filters: curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_UPDATE_PATH} -F path=${packageZip} -F packageName=${packageName} -F groupName=${PACKAGE_GROUP} -F filter=\"[{\"root\" : \"/${path}\", \"rules\": []}]\" -F '_charset_=UTF-8'"
@@ -89,6 +95,9 @@ if [[ ! "$addFilters" == "200" ]]; then
 fi
 
 # build package
+if [[ ${verbose} ]]; then
+    echo "building package"
+fi
 buildPackage=$(curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}.zip\?cmd\=build)
 if [[ ! "$buildPackage" == "200" ]]; then
     echo "failed to build package: curl --write-out %{http_code} --silent --output /dev/null -i --user $auth --connect-timeout $TIMEOUT -X POST ${env}${CRX_CREATE_PATH}${packageName}.zip\?cmd\=build"
@@ -108,4 +117,7 @@ datetime() {
 mkdir -p ${outputDir}
 
 # download package and suppress download stats
+if [[ ${verbose} ]]; then
+    echo "downloading package"
+fi
 curl --silent --fail --show-error --user ${auth} ${env}etc/packages/${PACKAGE_GROUP}/${packageName}.zip > ./${outputDir}/${packageName}.$(datetime).zip

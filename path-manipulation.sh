@@ -5,12 +5,13 @@
 #   -j = append /jcr:content
 #   -v = verbose output
 
-while getopts  "p:jxv" OPTION
+while getopts  "p:jxsv" OPTION
 do
     case $OPTION in
         p) path=$OPTARG;;
         j) appendJcrContent=1;;
         x) extractPagePath=1;;
+        s) stripPagePath=1;;
         v) verbose=1;;
         *) exit 1;; # illegal option
     esac
@@ -45,6 +46,12 @@ fi
 # strip path back to just jcr:content (useful for backing up whole pages when moving content nodes)
 if [[ ${extractPagePath} && ${path} =~ (^.*/jcr:content)/.+$ ]]; then
     path=${BASH_REMATCH[1]}
+fi
+
+# strip path back to remove /content/telegraph and jcr:content
+if [[ ${stripPagePath} && ${path} =~ content ]]; then
+    path=${path//content\/telegraph\/}
+    path=${path//\/jcr:content/}
 fi
 
 echo "$path"

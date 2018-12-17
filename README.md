@@ -3,7 +3,7 @@
 on the command line run:
 
 ```
-chmod +x ./hub-converter.sh ./hub-backup.sh ./hub-move-content.sh ./aem-path-adapter.sh
+chmod +x *.sh
 ```
 
 this makes the scripts executable, so then it can be run from the same directory by just calling the script and passing it the path of the page you want to convert, e.g:

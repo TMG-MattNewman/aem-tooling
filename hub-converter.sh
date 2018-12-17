@@ -54,7 +54,7 @@ fi
 
 # get/setup the path
 PATH_PARAMS+="-p ${path} -j"
-path=$(./aem-path-adapter.sh ${PATH_PARAMS})
+path=$(./path-manipulation.sh ${PATH_PARAMS})
 
 # if local flag is there, use localhost
 if [[ ${local} ]]; then
@@ -107,7 +107,7 @@ if [[ ! "$pageJson" =~ ${HUB_RENDERER} ]]; then
     exit 1;
 fi
 
-./hub-backup.sh ${BACKUP_PARAMS}
+#./hub-backup.sh ${BACKUP_PARAMS}
 
 # TODO:
 # store nodes seen - where ... google doc?
